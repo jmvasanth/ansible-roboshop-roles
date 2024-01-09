@@ -1,0 +1,10 @@
+# Need to refer NodeJS task in common folder
+# Catalogue is one role
+# Common is another role
+# Import task nodejs.yaml in Catalogue
+
+- name: Install NodeJS 
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: nodejs
+
