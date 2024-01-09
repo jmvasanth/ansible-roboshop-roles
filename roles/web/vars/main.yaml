@@ -1,0 +1,5 @@
+CATALOGUE_HOST: catalogue.vgsk.online
+USER_HOST: user.vgsk.online
+SHIPPING_HOST: shipping.vgsk.online
+CART_HOST: cart.vgsk.online
+PAYMENT_HOST: payment.vgsk.online
