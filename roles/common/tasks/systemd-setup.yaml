@@ -3,8 +3,11 @@
     src: "{{component}}.service"
     dest: /etc/systemd/system/{{component}}.service
 
-- name: Daemon Reload
+- name: Daemon Reload & Restart
   ansible.builtin.systemd:
     daemon_reload: true
+
+- name: Restart "{{component}}"
+  ansible.builtin.service:
+    name: catalogue
     state: restarted
-    name: "{{component}}"
