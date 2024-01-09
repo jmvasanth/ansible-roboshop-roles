@@ -1,7 +1,7 @@
 - name: Setup NPM source
-    ansible.builtin.shell: "curl -SLO https://rpm.nodesource.com/nsolid_setup_rpm.sh | bash"
+  ansible.builtin.shell: "curl -SLO https://rpm.nodesource.com/nsolid_setup_rpm.sh | bash"
 
 - name: Install NodeJS
-    ansible.builtin.yum:
-      name: nodejs
-      state: installed
+  ansible.builtin.yum:
+    name: nodejs
+    state: installed
